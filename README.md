@@ -58,7 +58,7 @@ export type CategoryType =
  | 'хард-скил';
 
 ```
-
+```
 Карточка
 
 export interface ICard {
@@ -72,6 +72,7 @@ selected: boolean;
 }
 
 ```
+```
 Заказ
 
 export interface IOrder extends IOrderData {
@@ -80,7 +81,7 @@ export interface IOrder extends IOrderData {
 }
 
 ```
-
+```
 Корзина с товарами
 
 export interface IAppState {
@@ -91,6 +92,8 @@ order: IOrder;
 total: string | number;
 loading: boolean;
 }
+
+```
 
 ```
 Данные по заказу
@@ -104,12 +107,15 @@ export interface IOrderData {
 
 ```
 
+```
 Тип возвращения результата с сервера
 
 export interface IOrderResult {
 id: string;
 total: number;
 }
+
+```
 
 ```
 Тип описывающий ошибки валидации форм
